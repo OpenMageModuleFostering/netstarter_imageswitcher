@@ -1,0 +1,32 @@
+<?php
+$_product    = $this->getProduct();
+$_attributes = Mage::helper('core')->decorateArray($this->getAllowAttributes());
+$_iswitchName = "colorSwitcherPanels";
+$storeId = $this->helper('core')->getStoreid();
+$isCombineAttr=Mage::getStoreConfig('imageswitcher/settings/combine_attribute',$storeId);
+$primaryAttr=Mage::getStoreConfig('imageswitcher/settings/primary_attribute',$storeId);
+$primaryAttribute = $_product->getResource()->getAttribute($primaryAttr);
+$secondaryAttr=Mage::getStoreConfig('imageswitcher/settings/secondary_attribute',$storeId);
+$secondaryAttribute = $_product->getResource()->getAttribute($secondaryAttr);
+?>
+<?php if ($_product->isSaleable() && count($_attributes)):?>
+    <dl class="switcherWraper" data-id=<?php echo $_product->getId()?>
+        <?php foreach($_attributes as $_attribute): ?>
+            <?php if($this->isAttributePrimaryOrSecondary($_attribute->getProductAttribute()->getAttributeCode())):?>
+                <dd<?php if ($_attribute->decoratedIsLast){?> class="last"<?php }?>>
+                    <div class="input-box">
+                        <input type="hidden" class="super_attribute"
+                               name="super_attribute[<?php echo $_attribute->getAttributeId() ?>]"/>
+                        <ul class="<?php echo $_iswitchName ?>">
+                        </ul>
+                    </div>
+                </dd>
+                <?php if($_iswitchName ==  "colorSwitcherPanels") $_iswitchName = "colorSwitcherSubPanels"  ?>
+            <?php endif;?>
+        <?php endforeach; ?>
+    </dl>
+    <script type="text/javascript">
+        var spConfig_<?php echo $_product->getId()?> = new ListConfig_Product.Config(<?php echo $this->getJsonConfig() ?>);
+        var spJason_<?php echo $_product->getId()?> =<?php echo $this->getJsonConfig() ?>;
+    </script>
+<?php endif;?>

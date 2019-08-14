@@ -1,0 +1,29 @@
+dl.switcherWraper { float:left; width:100%}
+
+ul.colorSwitcherPanels li
+{
+    width: 28px;
+    padding: 4px 4px 4px;
+    float: left;
+
+}
+
+.switcherWraper dd { border:none; clear: both; width:100%}
+
+ul.colorSwitcherPanels
+{
+    width : 100% ;
+}
+
+ul.colorSwitcherSubPanels li
+{
+    width: 28px;
+    padding: 4px 4px 4px;
+    float: left;
+
+}
+
+ul.colorSwitcherSubPanels
+{
+    width : 100% ;
+}

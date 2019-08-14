@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <imageswitcher translate="label" module="imageswitcher">
+            <label>Netstarter Image Switcher</label>
+            <sort_order>300</sort_order>
+        </imageswitcher>
+    </tabs>
+    <sections>
+        <imageswitcher translate="label" module="imageswitcher">
+            <label>Configurations</label>
+            <tab>imageswitcher</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings>
+                    <label>Image Switcher Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <primary_attribute translate="label">
+                            <label>Primary Configuration Attribute</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>imageswitcher/system_config_source_product_attributes</source_model>
+                        </primary_attribute>
+                        <secondary_attribute translate="label">
+                            <label>Secondary Configuration Attribute</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>imageswitcher/system_config_source_product_attributes</source_model>
+                        </secondary_attribute>
+                        <combine_attribute translate="label">
+                            <label>Combine Attributes</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </combine_attribute>
+                        <image_location translate="label">
+                            <label>Configuration Attribute Image Location</label>
+                            <comment>folder name of the </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </image_location>
+                        <image_file_format>
+                            <label>Image File Format</label>
+                            <comment>Eg: .jpg</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </image_file_format>
+                    </fields>
+                </settings>
+                <display_options>
+                    <label>Image Switcher Display Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <listing_pages translate="label">
+                            <label>Listing Pages</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </listing_pages>
+                        <addtocart_listing_pages translate="label">
+                            <label>Addto Cart From Listing Pages</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </addtocart_listing_pages>
+                        <product_detail_page translate="label">
+                            <label>Product Detail Page</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </product_detail_page>
+                        <search_result_page translate="label">
+                            <label>Search Result Page</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </search_result_page>
+                    </fields>
+                </display_options>
+            </groups>
+        </imageswitcher>
+    </sections>
+
+</config>

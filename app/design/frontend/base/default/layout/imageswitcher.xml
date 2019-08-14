@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <PRODUCT_TYPE_configurable translate="label" module="catalog">
+        <reference name="head">
+            <action method="addItem" ifconfig="imageswitcher/display_options/product_detail_page"><type>skin_js</type><name>js/netstarter/jqzoom/jquery-1.3.1.min.js</name></action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/product_detail_page">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/imageswitcher.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/product_detail_page">
+                <type>skin_css</type><script>css/netstarter/imageswitcher/imageswitcher.css</script>
+            </action>
+        </reference>
+        <reference name="product.info.options.configurable">
+            <action method="setTemplate" ifconfig="imageswitcher/display_options/product_detail_page">
+                <template>netstarter/imageswitcher/product/view/type/options/configurable.phtml</template>
+            </action>
+        </reference>
+        <reference name="product.info.media">
+            <action method="setTemplate" ifconfig="imageswitcher/display_options/product_detail_page">
+                <template>netstarter/imageswitcher/catalog/product/view/media.phtml</template>
+            </action>
+        </reference>
+    </PRODUCT_TYPE_configurable>
+
+    <catalog_category_default translate="label">
+        <reference name="head">
+            <action method="addItem" ifconfig="imageswitcher/display_options/listing_pages"><type>skin_js</type><name>js/netstarter/jqzoom/jquery-1.3.1.min.js</name></action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/listing_pages">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/listconfigurable.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/listing_pages">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/imageswitcher.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/listing_pages">
+                <type>skin_css</type><script>css/netstarter/imageswitcher/imageswitcher.css</script>
+            </action>
+        </reference>
+        <reference name="product_list" ifconfig="imageswitcher/display_options/listing_pages">
+            <action method="setTemplate">
+                <template>netstarter/imageswitcher/catalog/product/list.phtml</template>
+            </action>
+        </reference>
+    </catalog_category_default>
+
+    <catalog_category_layered translate="label">
+        <reference name="head">
+            <action method="addItem" ifconfig="imageswitcher/display_options/listing_pages"><type>skin_js</type><name>js/netstarter/jqzoom/jquery-1.3.1.min.js</name></action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/listing_pages">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/listconfigurable.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/listing_pages">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/imageswitcher.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/listing_pages">
+                <type>skin_css</type><script>css/netstarter/imageswitcher/imageswitcher.css</script>
+            </action>
+        </reference>
+        <reference name="product_list">
+            <action method="setTemplate" ifconfig="imageswitcher/display_options/listing_pages">
+                <template>netstarter/imageswitcher/catalog/product/list.phtml</template>
+            </action>
+        </reference>
+    </catalog_category_layered>
+
+    <catalogsearch_result_index translate="label">
+        <reference name="head">
+            <action method="addItem" ifconfig="imageswitcher/display_options/search_result_page"><type>skin_js</type><name>js/netstarter/jqzoom/jquery-1.3.1.min.js</name></action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/search_result_page">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/listconfigurable.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/search_result_page">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/imageswitcher.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/search_result_page">
+                <type>skin_css</type><script>css/netstarter/imageswitcher/imageswitcher.css</script>
+            </action>
+        </reference>
+        <reference name="search_result_list">
+            <action method="setTemplate" ifconfig="imageswitcher/display_options/search_result_page">
+                <template>netstarter/imageswitcher/catalog/product/list.phtml</template>
+            </action>
+        </reference>
+    </catalogsearch_result_index>
+
+    <catalogsearch_advanced_result translate="label">
+        <reference name="head">
+            <action method="addItem" ifconfig="imageswitcher/display_options/search_result_page"><type>skin_js</type><name>js/netstarter/jqzoom/jquery-1.3.1.min.js</name></action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/search_result_page">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/listconfigurable.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/search_result_page">
+                <type>skin_js</type><script>js/netstarter/imageswitcher/imageswitcher.js</script>
+            </action>
+            <action method="addItem" ifconfig="imageswitcher/display_options/search_result_page">
+                <type>skin_css</type><script>css/netstarter/imageswitcher/imageswitcher.css</script>
+            </action>
+        </reference>
+        <reference name="search_result_list">
+            <action method="setTemplate" ifconfig="imageswitcher/display_options/search_result_page">
+                <template>netstarter/imageswitcher/catalog/product/list.phtml</template>
+            </action>
+        </reference>
+    </catalogsearch_advanced_result>
+</layout>

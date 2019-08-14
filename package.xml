@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+    <name>Netstarter_Imageswitcher</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Image switcher allows you to easily present products in Magento that come in a variety of images depending on multiple configurable attributes such as Color and Material.</summary>
+    <description>Image switcher let you change the product images based on different selections for configurable attributes in the product catalog. &#xD;
+&#xD;
+&#xB7;         Support up to two configurable attributes (e.g. Color and Material) and is able to work as independent sections or a combined selection in the front end. This can be configured in backed at store level.&#xD;
+&#xD;
+&#xB7;         Admin interface will have the facility to define what configurable attributes are to be used for image switching&#xD;
+&#xD;
+&#xB7;         Admin interface will have the ability to define a folder location to pick the respective images to be displayed in frontend based on the attribute configuration&#xD;
+&#xD;
+&#xB7;         Listing pages&#xD;
+&#xD;
+o   Users are able to see what colors and/or materials [these two parameters are configurable] a product is available in&#xD;
+&#xD;
+o   By selecting the color and /or material users are able to view a picture of the product&#xD;
+&#xD;
+o   Ability of adding configurable products to cart from listing pages &#xD;
+&#xD;
+&#xB7;         Product pages&#xD;
+&#xD;
+o   Upon selecting a color and / or material multiple images are refreshed&#xD;
+&#xD;
+o   AJAX reloading for better usability</description>
+    <notes>0.1.0 stable release</notes>
+    <authors><author><name>Netstarter</name><user>cshotland</user><email>cshotland@netstarter.com.au</email></author></authors>
+    <date>2013-11-07</date>
+    <time>08:45:45</time>
+    <contents><target name="magecommunity"><dir name="Netstarter"><dir name="Imageswitcher"><dir name="Block"><dir name="Catalog"><dir name="Product"><dir name="View"><dir name="Type"><file name="Configurable.php" hash="e6cbca4922ed9915dc7404c467ec5965"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="6a530a304b2a0bf29a92dc04460eed83"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Product"><file name="Attributes.php" hash="379b1258383ee986c9d743dfe8948ad3"/></dir></dir></dir></dir></dir><dir name="controllers"><file name="AjaxController.php" hash="2d5d859f4a9031efd2eebdb7789d4c7c"/></dir><dir name="etc"><file name="adminhtml.xml" hash="cd8fdf4add9da3ae93bf09f275f333e6"/><file name="config.xml" hash="2ba408ec1f86200c448f008597aa7756"/><file name="system.xml" hash="14c15b3c6e6d06d22088216b7c7c4be8"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Netstarter_Imageswitcher.xml" hash="7ac53d54e901aff46a90764d80b19dad"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="imageswitcher.xml" hash="f349475c65ca9ed8edeb8e84f2856fdf"/></dir><dir name="template"><dir name="netstarter"><dir name="imageswitcher"><dir name="catalog"><dir name="product"><file name="list.phtml" hash="9b565db184edeec9abc2849b4f69381b"/><dir name="view"><file name="media.phtml" hash="3ad256bd72bab1a4f38fa07becb03d7c"/></dir></dir></dir><dir name="product"><dir name="view"><dir name="type"><dir name="options"><file name="configurable.phtml" hash="b654fc6fb07f9d6780af21ca19a809ee"/><file name="configurable_list.phtml" hash="5f513696bccac58cf4c304bc20c8dfc4"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="netstarter"><dir name="imageswitcher"><file name="imageswitcher.css" hash="503f970938015615f8379290ef12caba"/></dir></dir></dir><dir name="js"><dir name="netstarter"><dir name="imageswitcher"><file name="imageswitcher.js" hash="2537191a69a888bbaef659bed0589fff"/><file name="isconfigurable.js" hash="f1640305659c0f03d51527da03b92062"/><file name="listconfigurable.js" hash="bbb916ae21f48b8b9cdf39d897e067cf"/></dir><dir name="jqzoom"><file name="jquery-1.3.1.min.js" hash="2789531e44cf13662d371050222010ff"/><file name="jquery.jqzoom1.0.1.js" hash="0ab1594c3941c5db3386ff68ada5dac6"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.1.0</max></php></required></dependencies>
+</package>
