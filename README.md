@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Image switcher allows you to easily present products in Magento that come in a variety of images depending on multiple configurable attributes such as Color and Material.

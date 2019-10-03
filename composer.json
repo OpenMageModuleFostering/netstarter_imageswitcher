@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Netstarter_Imageswitcher",
+    "name": "openmage-module-fostering\/netstarter_imageswitcher",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Image switcher allows you to easily present products in Magento that come in a variety of images depending on multiple configurable attributes such as Color and Material.",
     "authors": [
